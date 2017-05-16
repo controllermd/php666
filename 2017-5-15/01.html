@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				float: left;
+				margin-left: 20px;
+			}
+			.ul{
+				position: relative;
+				
+				display: none;
+			}
+			.ul li{
+				float: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<ul>
+			<li onmouseover="dianji(this)" onmouseout="yichu(this)">
+				<a href="">java学科</a>
+				<ul class="ul">
+					<li>java</li>
+					<li>java</li>
+					<li>java</li>
+				</ul>
+			</li>
+			<li onmouseover="dianji(this)" onmouseout="yichu(this)">
+				<a href="">php学科</a>
+				<ul class="ul" id="ul2">
+					<li>php</li>
+					<li>php</li>
+					<li>php</li>
+				</ul>
+			</li>
+			<li onmouseover="dianji(this)" onmouseout="yichu(this)">
+				<a href="">ui学科</a>
+				<ul class="ul">
+					<li>ui</li>
+					<li>ui</li>
+					<li>ui</li>
+				</ul>
+			</li>
+			<li onmouseover="dianji(this)" onmouseout="yichu(this)">
+				<a href="">web学科</a>
+				<ul class="ul">
+					<li>web</li>
+					<li>web</li>
+					<li>web</li>
+				</ul>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			function dianji(li){
+				var subMenu = li.getElementsByTagName("ul")[0];
+				subMenu.style.display = 'block';
+			}
+			function yichu(li){
+				var subMenu = li.getElementsByTagName("ul")[0];
+				subMenu.style.display = 'none';
+			}
+			
+			
+		</script>
+	</body>
+</html>

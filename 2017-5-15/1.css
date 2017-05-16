@@ -1,0 +1,55 @@
+*{ 
+ margin: 0; 
+ padding: 0; 
+} 
+#wrapper{ 
+ position: relative; 
+ width: 600px; 
+ margin: 50px auto; 
+ overflow: hidden; 
+} 
+#pointer{ 
+ clear: both; 
+ position: absolute; 
+ right: 1px; 
+ bottom: 30px; 
+ width: 180px; 
+ height: 2px; 
+} 
+#pointer span{ 
+ display: block; 
+ box-sizing: border-box; 
+ float: left; 
+ width: 30px; 
+ height: 30px; 
+ margin-right: 10px; 
+ border-radius: .5px; 
+ background: red; 
+ opacity: .5; 
+ -webkit-opacity: .5; 
+ -moz-opacity: .5; 
+ filter:alpha(opacity=10); 
+
+} 
+#pointer span a{
+	text-decoration: none;
+	color: #fff;
+	padding: 0 0 0 10px;
+	line-height: 30px;
+}
+#pointer .active{ 
+ opacity: .8; 
+ -webkit-opacity: .8; 
+ -moz-opacity: .8; 
+ filter:alpha(opacity=80); 
+} 
+#box{ 
+ position: relative; 
+ width: 600px; 
+ clear: both; 
+} 
+img{ 
+ display: block; 
+ float: left; 
+ width: 600px; 
+}
